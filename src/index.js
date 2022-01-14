@@ -1,1 +1,4 @@
-console.log('Hello, restaurant!');
+import loadHome from "./home";
+import "./style.css";
+
+loadHome();
