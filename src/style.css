@@ -1,0 +1,46 @@
+html {
+    background: url(./pexels-vinicius-benedit-3620705.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#container {
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
+#title {
+    font-size: 6rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: lightblue;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+#tagline {
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
