@@ -11,6 +11,15 @@ body, html {
 
 #content {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    height: 100%;
+}
+
+#big-container {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -43,4 +52,20 @@ body, html {
 ul {
     list-style-type: none;
     padding-left: 0;
+    margin: 0;
+}
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbar-items {
+    display: flex;
+    color: lightblue;
+    font-size: 2.5rem;
+    gap: 2.5rem;
+    padding: 1rem;
 }

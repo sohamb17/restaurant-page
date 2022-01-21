@@ -1,6 +1,23 @@
 let content = document.querySelector("#content");
 
 export default function loadHome() {
+    let navbar = document.createElement("div");
+    navbar.id = "navbar";
+    let navbarItems = document.createElement("ul");
+    navbarItems.id = "navbar-items";
+    let home = document.createElement("li");
+    home.textContent = "Home";
+    let menu = document.createElement("li");
+    menu.textContent = "Menu";
+    let contact = document.createElement("li");
+    contact.textContent = "Contact Us";
+    navbarItems.appendChild(home);
+    navbarItems.appendChild(menu);
+    navbarItems.appendChild(contact);
+    navbar.appendChild(navbarItems);
+    content.appendChild(navbar);
+    let bigContainer = document.createElement("div");
+    bigContainer.id = "big-container";
     let container = document.createElement("div");
     container.id = "container";
     let title = document.createElement("h1");
@@ -35,5 +52,6 @@ export default function loadHome() {
     container.appendChild(tagLine);
     container.appendChild(secondaryText);
     container.appendChild(outletContainer);
-    content.appendChild(container);
+    bigContainer.appendChild(container);
+    content.appendChild(bigContainer);
 }
