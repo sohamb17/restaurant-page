@@ -1,21 +1,5 @@
-let content = document.querySelector("#content");
-
 export default function loadHome() {
-    let navbar = document.createElement("div");
-    navbar.id = "navbar";
-    let navbarItems = document.createElement("ul");
-    navbarItems.id = "navbar-items";
-    let home = document.createElement("li");
-    home.textContent = "Home";
-    let menu = document.createElement("li");
-    menu.textContent = "Menu";
-    let contact = document.createElement("li");
-    contact.textContent = "Contact Us";
-    navbarItems.appendChild(home);
-    navbarItems.appendChild(menu);
-    navbarItems.appendChild(contact);
-    navbar.appendChild(navbarItems);
-    content.appendChild(navbar);
+    let content = document.querySelector("#content");
     let bigContainer = document.createElement("div");
     bigContainer.id = "big-container";
     let container = document.createElement("div");
@@ -37,13 +21,13 @@ export default function loadHome() {
     outletDescription.textContent = "Outlets at:";
     let outlets = document.createElement("ul");
     outlets.className = "description";
-    let vile_parle = document.createElement("li");
-    vile_parle.textContent = "Vile Parle";
+    let vileParle = document.createElement("li");
+    vileParle.textContent = "Vile Parle";
     let dadar = document.createElement("li");
     dadar.textContent = "Dadar";
     let bandra = document.createElement("li");
     bandra.textContent = "Bandra";
-    outlets.appendChild(vile_parle);
+    outlets.appendChild(vileParle);
     outlets.appendChild(dadar);
     outlets.appendChild(bandra);
     outletContainer.appendChild(outletDescription);
