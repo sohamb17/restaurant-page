@@ -2,11 +2,13 @@ import loadNavbar from "./navbar";
 import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
+import loadFooter from "./footer";
 import "./style.css";
 
 
 loadNavbar();
 loadHome();
+loadFooter();
 
 let home = document.querySelector("#home");
 let menu = document.querySelector("#menu");

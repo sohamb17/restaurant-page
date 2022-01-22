@@ -55,7 +55,7 @@ ul {
     margin: 0;
 }
 
-#navbar {
+#navbar, #footer {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
@@ -123,4 +123,12 @@ img {
 
 .phone > p {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
 }

@@ -16,6 +16,7 @@ class Sushi {
 export default function loadMenu() {
     let sushiArray = []
     let content = document.querySelector("#content");
+    let footer = document.querySelector("#footer");
     let bigContainer = document.createElement("div");
     bigContainer.id = "big-container";
     let container = document.createElement("div");
@@ -61,5 +62,5 @@ export default function loadMenu() {
         container.appendChild(sushiItem);
     });
     bigContainer.appendChild(container);
-    content.appendChild(bigContainer);
+    content.insertBefore(bigContainer, footer);
 }

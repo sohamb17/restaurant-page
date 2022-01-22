@@ -1,5 +1,6 @@
 export default function loadHome() {
     let content = document.querySelector("#content");
+    let footer = document.querySelector("#footer");
     let bigContainer = document.createElement("div");
     bigContainer.id = "big-container";
     let container = document.createElement("div");
@@ -37,5 +38,5 @@ export default function loadHome() {
     container.appendChild(secondaryText);
     container.appendChild(outletContainer);
     bigContainer.appendChild(container);
-    content.appendChild(bigContainer);
+    content.insertBefore(bigContainer, footer);
 }

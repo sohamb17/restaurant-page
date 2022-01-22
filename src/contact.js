@@ -1,5 +1,6 @@
 export default function loadContact() {
     let content = document.querySelector("#content");
+    let footer = document.querySelector("#footer");
     let bigContainer = document.createElement("div");
     bigContainer.id = "big-container";
     let container = document.createElement("div");
@@ -53,5 +54,5 @@ export default function loadContact() {
     container.appendChild(title);
     container.appendChild(smallContainer)
     bigContainer.appendChild(container);
-    content.appendChild(bigContainer);
+    content.insertBefore(bigContainer, footer);
 }
