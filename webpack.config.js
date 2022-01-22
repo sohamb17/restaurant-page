@@ -4,7 +4,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: {
         index: './src/index.js',
+        navbar: './src/navbar.js',
         home: './src/home.js',
+        menu: './src/menu.js',
+        contact: './src/contact.js',
+        footer: './src/footer.js',
     },
     plugins: [
         new HtmlWebpackPlugin({
