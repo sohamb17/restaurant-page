@@ -1,1 +1,0 @@
-A homepage for a sushi restaurant.
