@@ -1,0 +1,57 @@
+export default function loadContact() {
+    let content = document.querySelector("#content");
+    let bigContainer = document.createElement("div");
+    bigContainer.id = "big-container";
+    let container = document.createElement("div");
+    container.id = "container";
+    let title = document.createElement("h1");
+    title.id = "title";
+    title.className = "description";
+    title.textContent = "Contact Us";
+    let smallContainer = document.createElement("div");
+    smallContainer.id = "small-container";
+    let left = document.createElement("div");
+    left.className = "left";
+    let phoneText = document.createElement("p");
+    phoneText.className = "description";
+    phoneText.textContent = "Phone";
+    let middle = document.createElement("div");
+    middle.className = "middle";
+    let colon1 = document.createElement("p");
+    colon1.className = "description";
+    colon1.textContent = ":";
+    let right = document.createElement("div");
+    right.className = "right";
+    let phone = document.createElement("div");
+    phone.className = "phone";
+    let phone1 = document.createElement("p");
+    phone1.className = "description";
+    phone1.textContent = "1234567890";
+    let phone2 = document.createElement("p");
+    phone2.className = "description";
+    phone2.textContent = "0123456789";
+    left.appendChild(phoneText);
+    middle.appendChild(colon1);
+    phone.appendChild(phone1);
+    phone.appendChild(phone2);
+    right.appendChild(phone);
+    let emailtext = document.createElement("p");
+    emailtext.className = "description";
+    emailtext.textContent = "Email"
+    let colon2 = document.createElement("p");
+    colon2.className = "description";
+    colon2.textContent = ":";
+    let email = document.createElement("p");
+    email.className = "description";
+    email.textContent = "whatever@blabla.com";
+    left.appendChild(emailtext);
+    middle.appendChild(colon2);
+    right.appendChild(email);
+    smallContainer.appendChild(left);
+    smallContainer.appendChild(middle);
+    smallContainer.appendChild(right);
+    container.appendChild(title);
+    container.appendChild(smallContainer)
+    bigContainer.appendChild(container);
+    content.appendChild(bigContainer);
+}

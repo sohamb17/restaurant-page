@@ -1,6 +1,7 @@
 import loadNavbar from "./navbar";
 import loadHome from "./home";
 import loadMenu from "./menu";
+import loadContact from "./contact";
 import "./style.css";
 
 
@@ -9,6 +10,7 @@ loadHome();
 
 let home = document.querySelector("#home");
 let menu = document.querySelector("#menu");
+let contact = document.querySelector("#contact");
 
 let activeTab = home;
 
@@ -33,6 +35,15 @@ menu.addEventListener("click", () => {
         deleteTab();
         loadMenu();
         activeTab = menu;
+        activeTab.classList.toggle("active-tab");
+    }
+});
+
+contact.addEventListener("click", () => {
+    if (contact !== activeTab) {
+        deleteTab();
+        loadContact();
+        activeTab = contact;
         activeTab.classList.toggle("active-tab");
     }
 });

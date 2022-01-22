@@ -14,7 +14,7 @@ export default function loadNavbar() {
     menu.id = "menu";
     menu.classList.add("navbar-item");
     let contact = document.createElement("li");
-    contact.textContent = "Contact Us";
+    contact.textContent = "Contact";
     contact.id = "contact";
     contact.classList.add("navbar-item");
     navbarItems.appendChild(home);

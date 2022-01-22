@@ -20,6 +20,11 @@ export default function loadMenu() {
     bigContainer.id = "big-container";
     let container = document.createElement("div");
     container.id = "container";
+    let title = document.createElement("h1");
+    title.id = "title";
+    title.className = "description";
+    title.textContent = "Menu";
+    container.appendChild(title);
     let nigiri = new Sushi("Nigiri", "A topping, usually fish, served on top of sushi rice", 200, nigiriImage);
     let sashimi = new Sushi("Sashimi", "Fish or shellfish served alone (no rice)", 250, sashimiImage);
     let maki = new Sushi("Maki", "Rice and filling wrapped in seaweed", 300, makiImage);
